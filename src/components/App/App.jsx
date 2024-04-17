@@ -23,7 +23,6 @@ export default function App() {
   }, [responses]);
 
   const updateFeedback = (feedbackType) => {
-    // нове значення стану
     setResponses({
       ...responses,
       [feedbackType]: responses[feedbackType] + 1,
